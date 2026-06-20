@@ -1,70 +1,56 @@
 ## Cena 1
 
-[[PAUSE 8]]
-Começamos pela ideia mais familiar: rotação. Quando uma carga elétrica gira em círculo, ela vira uma corrente, e corrente gera campo magnético. Pela física clássica, o átomo pode ser imaginado como um pequeno ímã.
+O que é spin? 
 
-[[PAUSE 2]]
-Nesse quadro, o momento magnético acompanha o momento angular. A relação entre eles é mu igual a gamma vezes L, e gamma é a razão giromagnética.
+Nesse curto vídeo, vamos fazer uma pequena introdução a vocês.
 
-[[PAUSE 4]]
-A analogia é boa, mas ela ainda é só o começo. No átomo, queremos saber se esse magnetismo vem mesmo da órbita da partícula ou de algo mais profundo.
+Começamos por uma ideia fammiliar: rotação. Quando um partícula gira em círculo, ela adquire uma quantidade chamada de momento angular, o que basicamente quantifica o quanto de rotação ela tem. Vamos representar isso pela letra L.  Agora, quando uma carga elétrica gira em círculo, ela vira uma corrente, e,  da teoria do eletromagnetismo, os físicos já sabiam que isso deveria gerar um campo magnético. Representamos isso pela letra grega mu.
 
-[[PAUSE 6]]
+[PAUSA]
+
+As teorias clássicas diziam que L e mu são proporcionais por um fator de proporcionalidade, denotado de fato giromagnético e pela letra gamma. A fórmula fica, então, como a do quadro. Observe com calma.
+
+[PAUSA]
+Essa representação é muito boa, mas em um átomo a coisa é um pouco mais complicada. Queremos saber se esse magnetismo vem mesmo da rotação da partícula ou de algo mais profundo.
+
 É justamente essa pergunta que o experimento de Stern e Gerlach vai testar.
-
-[[PAUSE 2]]
-E é quando o laboratório entra em cena que a intuição clássica começa a falhar.
 
 ## Cena 2
 
-[[PAUSE 8]]
 Em 1922, Stern e Gerlach dispararam átomos de prata por um campo magnético não uniforme. Como os átomos são neutros, o desvio só aparece porque o campo varia no espaço.
 
-[[PAUSE 3]]
-A força obedece ao gradiente do produto entre mu e B. O campo puxa o momento magnético para cima ou para baixo, conforme a orientação.
+A força obedece ao gradiente do produto entre mu e B, como diz a fórmula. Basicamente, isso apenas mostra que essa força é proporcional à variação do campo, e não ao campo em si. Por isso o experimento usou o campo variável.
 
-[[PAUSE 4]]
-Na leitura clássica, os átomos sairiam com orientações aleatórias e formariam uma faixa contínua na tela.
+Dessa forma, o campo puxa o átomo para cima ou para baixo, conforme a orientação do átomo.
 
-[[PAUSE 4]]
+[PAUSA]
+Na física clássica, os átomos sairiam com orientações aleatórias e formariam uma faixa contínua na tela.
+
 A previsão era essa: uma mancha vertical sem cortes nítidos.
-
-[[PAUSE 2]]
 É essa imagem contínua que o experimento vai colocar à prova.
 
 ## Cena 3
 
-[[PAUSE 10]]
 Na escala quântica, o momento angular não varia de forma contínua. Ele aparece em projeções discretas, como degraus.
 
-[[PAUSE 2]]
-A teoria antiga leva ao número dois L mais um. Se L é inteiro, o resultado deveria ser ímpar, com um estado central de projeção zero.
+A teoria quântica para o momento angular leva ao número dois L mais um. Se L é inteiro, como a física habitual previa, o resultado deveria ser ímpar, com um estado central de projeção zero.
 
-[[PAUSE 4]]
-Mas a tela mostra outra coisa: dois traços simétricos, sem franja no meio.
-
-[[PAUSE 3]]
-O átomo não entrega uma rampa; ele entrega estados permitidos. A quantização é real.
-
-[[PAUSE 2]]
-E essa quebra obriga a física a abandonar a imagem clássica do mundo atômico.
+[PAUSA]
+Mas o experimento mostrou outra coisa: dois traços simétricos, sem franja no meio.
 
 ## Cena 4
 
-[[PAUSE 8]]
-Se aparecem duas posições permitidas, a conta leva a L igual a meio. Isso já mostra que o resultado não vem de uma órbita clássica.
+Se aparecem duas posições permitidas, a conta leva a L igual a meio. Isso já mostra que o resultado não vem de uma órbita clássica, o que era absurdamente surpreendente.
 
-[[PAUSE 2]]
+[PAUSA]
 O que Stern e Gerlach encontram é uma propriedade intrínseca: o spin.
 
-[[PAUSE 5]]
-Spin não é uma bolinha girando no espaço. É um momento angular fundamental, embutido na própria partícula.
+[PAUSA]
+Spin não é uma bolinha girando no espaço. É um momento angular fundamental, embutido na própria partícula
 
-[[PAUSE 5]]
-É por isso que o experimento é tão importante: ele mostra, de forma visual, que o mundo microscópico obedece a regras quânticas.
+É por isso que o experimento é tão importante: ele mostra, de forma visual, que a teoria clássica e quântica tem muitas analogias, mas isso tem um limite.
 
-[[PAUSE 4]]
-E isso fecha a história: o elétron carrega uma propriedade própria da natureza.
+[PAUSA]
+Está determinado então: o elétron carrega uma propriedade própria da natureza.
 
-[[PAUSE 2]]
-O nome dessa propriedade é spin, e ele vira a linguagem do mundo microscópico.
+O nome dessa propriedade é spin.
