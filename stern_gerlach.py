@@ -56,7 +56,7 @@ class Scene1(Scene):
         self.play(Write(eq))
         self.play(Write(t_mag), Write(t_ang), Write(t_gam))
         self.play(Create(eq_box))
-        self.wait(22)
+        self.wait(15)
         self.play(FadeOut(eq, t_mag, t_ang, t_gam, eq_box, title))
 
 # ==========================================================
@@ -84,6 +84,7 @@ class Scene2(Scene):
         self.play(Write(f_eq), FadeIn(f_desc))
         self.wait(15)
         
+        self.wait(7)
         # Posicionamento corrigido para alinhar organicamente ao topo da tela de projeção
         exp_txt = Tex("Expectativa Clássica").scale(0.8).next_to(tela, LEFT, buff=0.5).shift(LEFT)
         
@@ -91,9 +92,8 @@ class Scene2(Scene):
         mancha = Rectangle(width=0.2, height=3.5, color=YELLOW, fill_opacity=0.5).move_to(tela.get_center())
         
         self.play(Write(exp_txt))
-        self.wait(10)
         self.play(Create(linhas_c), FadeIn(mancha), run_time=8)
-        self.wait(18)
+        self.wait(10)
         self.play(FadeOut(grupo_exp, f_eq, f_desc, exp_txt, linhas_c, mancha, sg_title))
 
 # ==========================================================
@@ -124,7 +124,9 @@ class Scene3(Scene):
             Tex("Sempre Ímpar").set_color(YELLOW)
         ).arrange(DOWN, aligned_edge=LEFT).to_edge(LEFT, buff=0.8).shift(UP*1)
         
-        self.play(FadeIn(forno_q, tela_q), Write(info_q))
+        self.play(FadeIn(forno_q, tela_q))
+        self.wait(5)
+        self.play(Write(info_q))
         
         p_u = Dot(tela_q.get_center() + UP*2, color=YELLOW)
         p_c = Dot(tela_q.get_center(), color=YELLOW)
@@ -137,12 +139,12 @@ class Scene3(Scene):
         
         self.play(Create(l_u), Create(l_c), Create(l_d), FadeIn(p_u, p_c, p_d))
         self.play(Write(label_nulo))
-        self.wait(18)
+        self.wait(13)
         
         res_txt = Tex("Resultado Real: PAR (2 pontos)").to_edge(UP, buff=1.2).set_color(RED)
         cruz = Cross(p_c, stroke_width=8)
         self.play(Write(res_txt), Create(cruz))
-        self.wait(5)
+        self.wait(2)
         self.play(FadeOut(l_c, p_c, label_nulo, cruz, forno_q, tela_q, info_q, l_u, l_d, p_u, p_d, res_txt, q_title))
 
 
@@ -155,14 +157,14 @@ class Scene4(Scene):
         eq_spin = MathTex(r"2", r"L", r"+ 1 = 2").scale(1.8).move_to(UP * 1.8)
         eq_spin[1].set_color(BLUE)
         self.play(Write(eq_spin))
-        self.wait(8)
+        self.wait(5)
         
         eq_resultado = MathTex(r"L", r"=", r"\frac{1}{2}").scale(2.5).next_to(eq_spin, DOWN, buff=0.8)
         eq_resultado[0].set_color(BLUE)
         eq_resultado[2].set_color(YELLOW)
         
         self.play(TransformFromCopy(eq_spin, eq_resultado), run_time=4)
-        self.wait(8)
+        self.wait(5)
         
         box_spin = SurroundingRectangle(eq_resultado, color=GREEN, buff=0.4)
         txt_spin = Tex("SPIN").scale(1.5).next_to(box_spin, RIGHT, buff=0.6).set_color(GREEN)
@@ -172,7 +174,7 @@ class Scene4(Scene):
         self.play(FadeOut(eq_spin, eq_resultado, box_spin, txt_spin))
         
         # ==========================================================
-        # SEGUNDA PARTE: Título, Eixos e Vetores (Sem a Esfera)
+        # SEGUNDA PARTE: Título, Eixos e Vetores 
         # ==========================================================
         spin_title = Tex("O Spin").scale(1.5).to_edge(UP)
         
@@ -194,9 +196,9 @@ class Scene4(Scene):
             Write(l_u), 
             Write(l_d)
         )
-        self.wait(12)
+        self.wait(5)
         
         final_msg = Tex("Uma propriedade intrínseca da natureza.").to_edge(DOWN, buff=0.5)
         self.play(Write(final_msg))
-        self.wait(18)
+        self.wait(7)
         self.play(FadeOut(e_z, e_x, v_u, v_d, l_u, l_d, final_msg, spin_title))
