@@ -33,10 +33,12 @@ A previsão era essa: uma mancha vertical sem cortes nítidos.
 
 Na escala quântica, o momento angular não varia de forma contínua. Ele aparece em projeções discretas, como degraus.
 
+[PAUSA]
+
 A teoria quântica para o momento angular leva ao número dois L mais um. Se L é inteiro, como a física habitual previa, o resultado deveria ser ímpar, com um estado central de projeção zero.
 
 [PAUSA]
-Mas o experimento mostrou outra coisa: dois traços simétricos, sem franja no meio.
+Mas o experimento mostrou outra coisa: dois traços simétricos, sem franja no meio. Isso é um número par de projeções.
 
 ## Cena 4
 
@@ -46,11 +48,9 @@ Se aparecem duas posições permitidas, a conta leva a L igual a meio. Isso já 
 O que Stern e Gerlach encontram é uma propriedade intrínseca: o spin.
 
 [PAUSA]
-Spin não é uma bolinha girando no espaço. É um momento angular fundamental, embutido na própria partícula
+Spin não é uma bolinha girando no espaço. É um momento angular fundamental, embutido na própria partícula.
 
 É por isso que o experimento é tão importante: ele mostra, de forma visual, que a teoria clássica e quântica tem muitas analogias, mas isso tem um limite.
 
 [PAUSA]
-Está determinado então: o elétron carrega uma propriedade própria da natureza.
-
-O nome dessa propriedade é spin.
+Está determinado então: o spin é  uma propriedade intrínseca própria da natureza, não uma consequência da rotação, apesar dos efeitos serem, em algum sentido, semelhantes.
