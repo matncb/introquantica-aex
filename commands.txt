@@ -1,9 +1,0 @@
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
-manim -ql stern_gerlach_completo.py Cena1_Introducao Cena2_ForcaMagneta Cena3_OProblemaImpar Cena4_Spin -a
-manim -qh stern_gerlach_completo.py Cena1_Introducao Cena2_ForcaMagneta Cena3_OProblemaImpar Cena4_Spin -a
-
-l -> baixa resolução
-h -> alta resolução

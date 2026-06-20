@@ -7,7 +7,7 @@ class Scene1(Scene):
     def construct(self):
         title = Tex("Momento Angular e Magnetismo").scale(1.1).to_edge(UP)
         self.play(Write(title))
-        self.wait(5) 
+        self.wait(8) 
         
         centro_ponto = Dot(color=YELLOW, radius=0.15).move_to(ORIGIN + DOWN*0.5)
         orbita = Ellipse(width=6.0, height=2.0, color=WHITE, stroke_opacity=0.5).move_to(centro_ponto)
@@ -23,15 +23,15 @@ class Scene1(Scene):
         label_L = MathTex(r"\vec{L}").next_to(vec_L, RIGHT).shift(UP * 0.4).set_color(GREEN)
         
         self.play(GrowArrow(vec_L), Write(label_L))
-        self.play(MoveAlongPath(carga, orbita), run_time=10, rate_func=linear) 
+        self.play(MoveAlongPath(carga, orbita), run_time=14, rate_func=linear) 
         
         vec_mu = Arrow(centro_ponto.get_center(), centro_ponto.get_center() + DOWN*1.5, buff=0, color=RED)
         label_mu = MathTex(r"\vec{\mu}").next_to(vec_mu, RIGHT, buff=0.1).set_color(RED)
         
         # Suavização da entrada do vetor com GrowArrow e controle de tempo
-        self.play(GrowArrow(vec_mu), FadeIn(label_mu), run_time=2, rate_func=smooth)
-        self.play(MoveAlongPath(carga, orbita), run_time=10, rate_func=linear) 
-        self.wait(5)
+        self.play(GrowArrow(vec_mu), FadeIn(label_mu), run_time=3, rate_func=smooth)
+        self.play(MoveAlongPath(carga, orbita), run_time=14, rate_func=linear) 
+        self.wait(8)
         
         self.play(FadeOut(centro_ponto, orbita, carga, label_carga, vec_L, label_L, vec_mu, label_mu))
 
@@ -56,7 +56,7 @@ class Scene1(Scene):
         self.play(Write(eq))
         self.play(Write(t_mag), Write(t_ang), Write(t_gam))
         self.play(Create(eq_box))
-        self.wait(15)
+        self.wait(22)
         self.play(FadeOut(eq, t_mag, t_ang, t_gam, eq_box, title))
 
 # ==========================================================
@@ -76,13 +76,13 @@ class Scene2(Scene):
         
         grupo_exp = VGroup(forno, forno_txt, tela, im_n, im_s)
         self.play(FadeIn(grupo_exp))
-        self.wait(5)
+        self.wait(8)
         
         f_eq = MathTex(r"\vec{F} = \nabla(\vec{\mu} \cdot \vec{B})").scale(1.1).to_edge(UP, buff=1.2).set_color(ORANGE)
         f_desc = Tex("Variação do campo no espaço").scale(0.6).next_to(f_eq, DOWN).set_color(ORANGE)
         
         self.play(Write(f_eq), FadeIn(f_desc))
-        self.wait(8)
+        self.wait(15)
         
         # Posicionamento corrigido para alinhar organicamente ao topo da tela de projeção
         exp_txt = Tex("Expectativa Clássica").scale(0.8).next_to(tela, LEFT, buff=0.5).shift(LEFT)
@@ -91,8 +91,9 @@ class Scene2(Scene):
         mancha = Rectangle(width=0.2, height=3.5, color=YELLOW, fill_opacity=0.5).move_to(tela.get_center())
         
         self.play(Write(exp_txt))
-        self.play(Create(linhas_c), FadeIn(mancha), run_time=5)
         self.wait(10)
+        self.play(Create(linhas_c), FadeIn(mancha), run_time=8)
+        self.wait(18)
         self.play(FadeOut(grupo_exp, f_eq, f_desc, exp_txt, linhas_c, mancha, sg_title))
 
 # ==========================================================
@@ -110,9 +111,9 @@ class Scene3(Scene):
             escada.add(dv)
         
         self.play(Create(rampa))
-        self.wait(5)
-        self.play(Transform(rampa, escada), run_time=3)
-        self.wait(8)
+        self.wait(10)
+        self.play(Transform(rampa, escada), run_time=4)
+        self.wait(12)
         self.play(FadeOut(rampa))
         
         forno_q = Rectangle(width=1.5, height=0.8).shift(LEFT*5.5 + DOWN*1)
@@ -136,12 +137,12 @@ class Scene3(Scene):
         
         self.play(Create(l_u), Create(l_c), Create(l_d), FadeIn(p_u, p_c, p_d))
         self.play(Write(label_nulo))
-        self.wait(12)
+        self.wait(18)
         
         res_txt = Tex("Resultado Real: PAR (2 pontos)").to_edge(UP, buff=1.2).set_color(RED)
         cruz = Cross(p_c, stroke_width=8)
         self.play(Write(res_txt), Create(cruz))
-        self.wait(3)
+        self.wait(5)
         self.play(FadeOut(l_c, p_c, label_nulo, cruz, forno_q, tela_q, info_q, l_u, l_d, p_u, p_d, res_txt, q_title))
 
 
@@ -154,20 +155,20 @@ class Scene4(Scene):
         eq_spin = MathTex(r"2", r"L", r"+ 1 = 2").scale(1.8).move_to(UP * 1.8)
         eq_spin[1].set_color(BLUE)
         self.play(Write(eq_spin))
-        self.wait(5)
+        self.wait(8)
         
         eq_resultado = MathTex(r"L", r"=", r"\frac{1}{2}").scale(2.5).next_to(eq_spin, DOWN, buff=0.8)
         eq_resultado[0].set_color(BLUE)
         eq_resultado[2].set_color(YELLOW)
         
-        self.play(TransformFromCopy(eq_spin, eq_resultado), run_time=3)
-        self.wait(5)
+        self.play(TransformFromCopy(eq_spin, eq_resultado), run_time=4)
+        self.wait(8)
         
         box_spin = SurroundingRectangle(eq_resultado, color=GREEN, buff=0.4)
         txt_spin = Tex("SPIN").scale(1.5).next_to(box_spin, RIGHT, buff=0.6).set_color(GREEN)
         
         self.play(Create(box_spin), Write(txt_spin))
-        self.wait(10)
+        self.wait(15)
         self.play(FadeOut(eq_spin, eq_resultado, box_spin, txt_spin))
         
         # ==========================================================
@@ -193,9 +194,9 @@ class Scene4(Scene):
             Write(l_u), 
             Write(l_d)
         )
-        self.wait(10)
+        self.wait(12)
         
         final_msg = Tex("Uma propriedade intrínseca da natureza.").to_edge(DOWN, buff=0.5)
         self.play(Write(final_msg))
-        self.wait(15)
+        self.wait(18)
         self.play(FadeOut(e_z, e_x, v_u, v_d, l_u, l_d, final_msg, spin_title))
