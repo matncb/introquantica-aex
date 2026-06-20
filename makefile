@@ -8,7 +8,7 @@ WORK_DIR = media/narration_work
 FINAL_VIDEO = SternGerlach.mp4
 PYTHON_BIN := $(if $(wildcard venv/bin/python),venv/bin/python,python3)
 MANIM := $(PYTHON_BIN) -m manim
-VOICE ?= pt-BR-AntonioNeural
+VOICE ?= pt-BR-ThalitaMultilingualNeural
 RATE ?= -5%
 
 .PHONY: all audio mux low scene1 scene2 scene3 scene4 clean

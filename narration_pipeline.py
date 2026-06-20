@@ -48,7 +48,7 @@ async def synthesize_audio(scene_name: str, text: str, output_path: Path, voice:
 
 
 def voice_candidates(preferred_voice: str) -> list[str]:
-    fallback_order = [preferred_voice, "pt-BR-AntonioNeural", "pt-BR-FranciscaNeural"]
+    fallback_order = [preferred_voice, "pt-BR-FranciscaNeural", "pt-BR-AntonioNeural"]
     unique_candidates: list[str] = []
     for candidate in fallback_order:
         if candidate not in unique_candidates:
@@ -225,7 +225,7 @@ def main() -> int:
     parser.add_argument("--video-dir", type=Path, help="Diretório dos vídeos renderizados.")
     parser.add_argument("--work-dir", type=Path, default=Path("media/narration_work"), help="Diretório temporário.")
     parser.add_argument("--output", type=Path, help="Arquivo final de vídeo com áudio.")
-    parser.add_argument("--voice", default="pt-BR-AntonioNeural", help="Voz neural do edge-tts.")
+    parser.add_argument("--voice", default="pt-BR-ThalitaMultilingualNeural", help="Voz neural do edge-tts.")
     parser.add_argument("--rate", default="-5%", help="Velocidade da fala.")
     args = parser.parse_args()
 

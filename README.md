@@ -70,7 +70,7 @@ Isso deixa a sincronização mais segura porque cada cena é tratada individualm
 
 Por padrão, o projeto usa:
 
-- Voz: `pt-BR-AntonioNeural`
+- Voz: `pt-BR-ThalitaMultilingualNeural`
 - Velocidade: `-5%`
 
 Você pode alterar isso sem mexer no código:
