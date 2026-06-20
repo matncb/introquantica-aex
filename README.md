@@ -7,6 +7,7 @@ Este projeto produz um vídeo de divulgação científica sobre o experimento de
 - Renderiza as quatro cenas definidas em [stern_gerlach.py](stern_gerlach.py).
 - Lê o roteiro em [script.md](script.md) e divide a narração por cena usando os blocos `## Cena 1`, `## Cena 2`, `## Cena 3` e `## Cena 4`.
 - Gera áudio com a biblioteca `edge-tts`, buscando uma voz neural em português.
+- Permite marcar pausas no roteiro com `[[PAUSE 3.5]]` para sincronizar a fala com a animação.
 - Ajusta cada faixa de áudio à duração do vídeo correspondente e entrega um arquivo final já sincronizado.
 
 ## Dependências
@@ -62,7 +63,7 @@ make mux
 
 ## Como o áudio é sincronizado
 
-O pipeline de narração lê o texto de [script.md](script.md), sintetiza cada cena separadamente e compara a duração do áudio com a duração do vídeo renderizado daquela cena. Depois disso, ele ajusta o áudio com `ffmpeg` para casar com o tempo do vídeo antes de fazer o mux.
+O pipeline de narração lê o texto de [script.md](script.md), interpreta os blocos `## Cena N` e os marcadores `[[PAUSE x]]`, sintetiza cada trecho falado com `edge-tts`, injeta os silêncios pedidos pelo roteiro e compara a duração do áudio final com a duração do vídeo renderizado daquela cena. Depois disso, ele ajusta o áudio com `ffmpeg` para casar com o tempo do vídeo antes de fazer o mux.
 
 Isso deixa a sincronização mais segura porque cada cena é tratada individualmente, reduzindo o risco de um trecho ficar adiantado ou atrasado quando o texto mudar.
 
@@ -70,7 +71,7 @@ Isso deixa a sincronização mais segura porque cada cena é tratada individualm
 
 Por padrão, o projeto usa:
 
-- Voz: `pt-BR-ThalitaMultilingualNeural`
+- Voz: `pt-BR-AntonioNeural`
 - Velocidade: `-5%`
 
 Você pode alterar isso sem mexer no código:
@@ -88,7 +89,7 @@ make all VOICE=pt-BR-AntonioNeural RATE=-10%
 
 ## Saídas geradas
 
-- `media/narration_audio/`: áudio bruto por cena.
+- `media/narration_audio/`: áudio final por cena, já com pausas do roteiro.
 - `media/narration_work/`: arquivos intermediários de ajuste e mux.
 - `media/videos/stern_gerlach/1080p60/`: vídeos renderizados pelo Manim.
 - `SternGerlach.mp4`: vídeo final com áudio sincronizado.

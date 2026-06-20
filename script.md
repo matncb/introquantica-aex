@@ -1,23 +1,70 @@
 ## Cena 1
 
-Começamos pela ideia mais familiar de todas: rotação. Quando um corpo gira, ele carrega momento angular, e quando uma carga elétrica entra em movimento circular, ela passa a se comportar como uma corrente. Corrente gera campo magnético, então o átomo pode ser visto, pela física clássica, como um pequeno ímã. Nessa imagem, o momento magnético e o momento angular caminham juntos, ligados pela razão giromagnética. Em linguagem simples, se a rotação muda, o magnetismo também muda. A relação que resume essa visão é a conexão entre o momento magnético e o momento angular, que no quadro aparece como uma proporcionalidade direta.
+[[PAUSE 8]]
+Começamos pela ideia mais familiar: rotação. Quando uma carga elétrica gira em círculo, ela vira uma corrente, e corrente gera campo magnético. Pela física clássica, o átomo pode ser imaginado como um pequeno ímã.
 
-Esse é o ponto de partida intuitivo do nosso vídeo: tratar o átomo como algo que gira de maneira análoga ao que conhecemos no mundo macroscópico. A ideia parece natural porque nosso cotidiano está cheio de exemplos de movimento circular e de efeitos magnéticos. O problema é que a natureza, no mundo atômico, nem sempre se comporta como o nosso instinto espera. Ainda assim, essa primeira aproximação clássica é importante porque ela prepara a pergunta central: se uma partícula carregada realmente se comportasse como um pequeno planeta magnético, o que veríamos ao tentar medir sua orientação no espaço?
+[[PAUSE 2]]
+Nesse quadro, o momento magnético acompanha o momento angular. A relação entre eles é mu igual a gamma vezes L, e gamma é a razão giromagnética.
+
+[[PAUSE 4]]
+A analogia é boa, mas ela ainda é só o começo. No átomo, queremos saber se esse magnetismo vem mesmo da órbita da partícula ou de algo mais profundo.
+
+[[PAUSE 6]]
+É justamente essa pergunta que o experimento de Stern e Gerlach vai testar.
+
+[[PAUSE 2]]
+E é quando o laboratório entra em cena que a intuição clássica começa a falhar.
 
 ## Cena 2
 
-Foi exatamente essa pergunta que Stern e Gerlach colocaram à prova em 1922. Eles dispararam átomos de prata por uma região com campo magnético não uniforme. Isso é crucial: num campo uniforme, um átomo neutro não sofreria desvio líquido na trajetória. Mas, quando o campo varia no espaço, aparece uma força que depende da orientação do momento magnético do átomo. É essa variação que separa os átomos para cima ou para baixo, como se o ímã invisível dentro deles fosse puxado em direções diferentes.
+[[PAUSE 8]]
+Em 1922, Stern e Gerlach dispararam átomos de prata por um campo magnético não uniforme. Como os átomos são neutros, o desvio só aparece porque o campo varia no espaço.
 
-Na leitura clássica, os átomos sairiam do forno com orientações aleatórias e atravessariam o aparelho sem preferências discretas. O resultado esperado seria uma faixa espalhada, contínua, ocupando uma região vertical inteira da tela. Em outras palavras, a física clássica previa uma distribuição suave, sem cortes nítidos, porque as orientações poderiam variar sem restrição. Essa expectativa parece plausível justamente porque estamos acostumados a pensar em grandezas que mudam de forma contínua. Só que a experiência mostrou que a natureza atômica escolheu outro caminho.
+[[PAUSE 3]]
+A força obedece ao gradiente do produto entre mu e B. O campo puxa o momento magnético para cima ou para baixo, conforme a orientação.
+
+[[PAUSE 4]]
+Na leitura clássica, os átomos sairiam com orientações aleatórias e formariam uma faixa contínua na tela.
+
+[[PAUSE 4]]
+A previsão era essa: uma mancha vertical sem cortes nítidos.
+
+[[PAUSE 2]]
+É essa imagem contínua que o experimento vai colocar à prova.
 
 ## Cena 3
 
-Na escala quântica, o momento angular não assume qualquer valor possível: ele vem em estados discretos, como degraus. Isso significa que não existe uma rampa contínua de orientações, mas apenas projeções permitidas. A previsão clássica-quântica antiga levava a um número ímpar de possibilidades, dado por 2L + 1, o que sempre deixaria um estado central sem desvio. Esse ponto do meio seria justamente o caso em que a projeção magnética fosse zero.
+[[PAUSE 10]]
+Na escala quântica, o momento angular não varia de forma contínua. Ele aparece em projeções discretas, como degraus.
 
-Só que o experimento não exibiu uma mancha contínua nem três pontos, cinco pontos ou outro número ímpar. A tela mostrou duas marcas bem definidas, simétricas e separadas. Não havia franja intermediária. O que parecia uma medição simples virou uma quebra completa da intuição clássica: o átomo não estava distribuindo sua orientação de forma livre, e sim revelando quantização real e inequívoca. Esse foi o tipo de resultado que obrigou a física a abandonar uma imagem antiga do mundo atômico.
+[[PAUSE 2]]
+A teoria antiga leva ao número dois L mais um. Se L é inteiro, o resultado deveria ser ímpar, com um estado central de projeção zero.
+
+[[PAUSE 4]]
+Mas a tela mostra outra coisa: dois traços simétricos, sem franja no meio.
+
+[[PAUSE 3]]
+O átomo não entrega uma rampa; ele entrega estados permitidos. A quantização é real.
+
+[[PAUSE 2]]
+E essa quebra obriga a física a abandonar a imagem clássica do mundo atômico.
 
 ## Cena 4
 
-Se a tela mostra exatamente duas posições permitidas, a conta deixa uma conclusão inevitável: a projeção observada corresponde a um momento angular de meio inteiro, em especial 1/2. Isso é incompatível com a ideia de uma órbita clássica simples. O que Stern e Gerlach encontraram não foi o resultado de uma pequena carga girando como um planetinha em torno do núcleo, mas sim uma propriedade intrínseca da própria partícula.
+[[PAUSE 8]]
+Se aparecem duas posições permitidas, a conta leva a L igual a meio. Isso já mostra que o resultado não vem de uma órbita clássica.
 
-Essa propriedade recebe o nome de spin. Ele não é uma rotação mecânica no espaço, como a de uma bola. É algo mais profundo: um tipo elementar de momento angular que a matéria carrega desde a sua estrutura fundamental. O experimento, então, não apenas mediu um desvio de feixe; ele revelou que o elétron possui uma identidade quântica própria, com comportamento que não se reduz à física clássica. É por isso que o resultado de Stern-Gerlach é tão famoso: ele mostra, de forma visual, que o universo microscópico obedece a regras muito mais sutis do que a nossa intuição cotidiana supõe.
+[[PAUSE 2]]
+O que Stern e Gerlach encontram é uma propriedade intrínseca: o spin.
+
+[[PAUSE 5]]
+Spin não é uma bolinha girando no espaço. É um momento angular fundamental, embutido na própria partícula.
+
+[[PAUSE 5]]
+É por isso que o experimento é tão importante: ele mostra, de forma visual, que o mundo microscópico obedece a regras quânticas.
+
+[[PAUSE 4]]
+E isso fecha a história: o elétron carrega uma propriedade própria da natureza.
+
+[[PAUSE 2]]
+O nome dessa propriedade é spin, e ele vira a linguagem do mundo microscópico.
